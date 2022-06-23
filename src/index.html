@@ -9,29 +9,40 @@
     <link rel="stylesheet" href="./input.css">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="../imgs/babi.png" >
+    <link rel="icon" type="image/x-icon" href="../imgs/babi.png">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    <header class="transition ease-in-out duration-500 h-28 container mx-auto flex justify-between items-center border-solid border-b-2 rounded">
-        <div class="ml-1">
-            <img id="logo" class="img w-24" src="../imgs/babi.png">
+
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center">
+            <span class="cursor-pointer">
+                <img class="h-14 inline"src="../imgs/babi.png">
+            </span>
+
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
         </div>
 
-        <div class="menu transition-all flex flex-col items-center sm:flex-row ">
-            <p class="close-btn transition-all pr-2 sm:hidden">X</p>
-            <a class="pr-2 sm:pr-4 font-montserrat text-xl hover:text-blue-300"><p>home</p></a>
-            <a class="pr-2 sm:pr-4 font-montserrat text-xl hover:text-blue-300"><p>projetos</p></a>
-            <a class="pr-2 sm:pr-4 font-montserrat text-xl hover:text-blue-300"><p>curriculo</p></a>
-        </div>
+        <ul class="md:flex md:items-center md:z-auto md:static md:w-auto md:py-0 md:pl-0 md:opacity-100 z-[-1] absolute bg-white w-full left-0  py-4  pl-7  opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500">projetos</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500">curriculo</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500">contato</a>
+            </li>
+            
+            <h2 class=""></h>
+        </ul>
+    </nav>
 
-        <div class="menu-hamburguer transition-all hidden">
-            <img class="menu-hamburguer mr-1" src="../imgs/menu.png">
-        </div>
-        
-    </header>
 
-
-    <main class="conteudo flex flex-col">
+    <main class="flex flex-col transition ease-in-out duration-700">
 
         <section class= "container mx-auto mb-7 flex items-center justify-between h-500 mt-3 p-4 border-solid border-b-2 rounded">
 

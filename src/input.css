@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-@media only screen and (max-width: 639px){
-
+.dropdown {
+    display: none;
 }
 
+.ctn.active .dropdown {
+    display: block;
+}
 
  

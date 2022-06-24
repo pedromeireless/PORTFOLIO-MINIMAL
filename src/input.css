@@ -4,10 +4,19 @@
 
 .dropdown {
     display: none;
+    animation: show;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
 }
 
 .ctn.active .dropdown {
     display: block;
+}
+
+@keyframes show {
+    from {opacity: 0}
+    to {opacity: 100}
+    
 }
 
  

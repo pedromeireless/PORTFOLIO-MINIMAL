@@ -14,3 +14,13 @@ function Menu(e){
         conteudo.classList.remove('blur-sm')
     }
 }
+
+let acc = document.getElementsByClassName('ctn');
+console.log(acc)
+
+for (i=0; i<acc.length; i++) {
+    acc[i].addEventListener('click', function () {
+      this.classList.toggle('active')
+    })
+  }
+

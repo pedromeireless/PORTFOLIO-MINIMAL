@@ -22,5 +22,9 @@ for (i=0; i<acc.length; i++) {
     acc[i].addEventListener('click', function () {
       this.classList.toggle('active')
     })
-  }
+}
 
+window.addEventListener('scroll', ()=>{
+    let header = document.querySelector('.nav-header')
+    return (window.scrollY > 85) ? header.classList.add('fixed') : header.classList.remove('fixed')
+})

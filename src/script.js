@@ -23,6 +23,7 @@ for (i=0; i<acc.length; i++) {
       this.classList.toggle('active')
     })
 }
+<<<<<<< HEAD
 
 window.onscroll = function() {
     let navbar = document.querySelector('.ctn-header')
@@ -30,4 +31,10 @@ window.onscroll = function() {
         console.log('oi')
     }
 }
+=======
+>>>>>>> 54b0234cbf8cd3b06efe4872db888d7ae43858d9
 
+window.addEventListener('scroll', ()=>{
+    let header = document.querySelector('.nav-header')
+    return (window.scrollY > 85) ? header.classList.add('fixed') : header.classList.remove('fixed')
+})

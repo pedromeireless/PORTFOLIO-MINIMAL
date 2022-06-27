@@ -22,5 +22,12 @@ for (i=0; i<acc.length; i++) {
     acc[i].addEventListener('click', function () {
       this.classList.toggle('active')
     })
-  }
+}
+
+window.onscroll = function() {
+    let navbar = document.querySelector('.ctn-header')
+    if (window.scrollY > 50) {
+        console.log('oi')
+    }
+}
 
